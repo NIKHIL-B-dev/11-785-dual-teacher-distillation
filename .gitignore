@@ -1,0 +1,28 @@
+﻿# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large artifacts and local training outputs
+project_results/checkpoints/*.pt
+project_results/checkpoints/*.pth
+project_results/checkpoints/*.bin
+
+# Optional local exports
+*.tmp
+*.log
+
+# Local scratch files
+*.extracted.txt
+.sixth/
