@@ -12,20 +12,24 @@ The core training objective is:
 ## Why this project
 Most production voice-security systems run separate pipelines for speaker verification and spoof detection. This project explores a unified student model to reduce inference overhead while preserving task-specific quality.
 
+## Technical Tags
+`speech-processing` `speaker-verification` `deepfake-detection` `knowledge-distillation` `wav2vec2` `pytorch`
+
 ## Repository Contents
-- `dual_teacher_colab_v3.ipynb` - end-to-end training notebook
-- `project_results/images/loss_curves.png` - training loss visualization
-- `project_results/checkpoints/train_meta.json` - run metadata + loss history
-- `PSEUDOCODE.md` - implementation pseudocode
-- `DualTeacher_MainReport.pdf` - technical report
-- `DualTeacher_VivaQA.pdf` - viva preparation material
-- `DualTeacher_Wav2Vec2.pptx` - presentation deck
+- `notebooks/dual_teacher_colab_v3.ipynb` - end-to-end training notebook
+- `artifacts/metrics/train_meta.json` - run metadata + loss history
+- `artifacts/figures/loss_curves.png` - training loss visualization
+- `artifacts/models/checkpoint_latest.pt` - latest checkpoint (Git LFS)
+- `docs/PSEUDOCODE.md` - implementation pseudocode
+- `docs/reports/DualTeacher_MainReport.pdf` - technical report
+- `docs/viva/DualTeacher_VivaQA.pdf` - viva preparation material
+- `presentations/DualTeacher_Wav2Vec2.pptx` - presentation deck
 
 ## Quick Start
-1. Open `dual_teacher_colab_v3.ipynb` in Colab.
+1. Open `notebooks/dual_teacher_colab_v3.ipynb` in Colab.
 2. Configure dataset paths/tokens as needed.
 3. Run distillation + fine-tuning stages.
-4. Inspect `project_results/checkpoints/train_meta.json` and `project_results/images/loss_curves.png`.
+4. Inspect `artifacts/metrics/train_meta.json` and `artifacts/figures/loss_curves.png`.
 
 ## Current Status
 - Architecture implemented and trained.

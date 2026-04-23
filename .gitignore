@@ -14,10 +14,9 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Large artifacts and local training outputs
-project_results/checkpoints/*.pt
-project_results/checkpoints/*.pth
-project_results/checkpoints/*.bin
+# Large artifacts (kept outside git unless explicitly tracked)
+*.pth
+*.bin
 
 # Optional local exports
 *.tmp
