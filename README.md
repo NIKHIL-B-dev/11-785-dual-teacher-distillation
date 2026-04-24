@@ -44,7 +44,7 @@ Most production voice-security systems run separate pipelines for speaker verifi
 ## Team
 - Lucky Gurjar
 - Aryan Singh Chandel
-- Nikhil B
+- NIKHIL Bappa
 - Tanuja Bhatt
 
 Mentor: Prof. Massa Baali  
